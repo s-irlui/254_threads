@@ -18,18 +18,14 @@ const products = [
 
 const container = document.getElementById("product-container");
 
-function displayProducts() {
-    products.forEach(product => {
+async function getProducts() {
+    try {
+        const res = await fetch("https://fakestoreapi.com/products");
+        const data = await res.json();
 
-        const card = document.createElement("div");
-        card.classList.add("product");
+        displayProducts(data);
 
-        card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>KES ${product.price}</p>
-        `;
-
-        container.appendChild(card);
-    });
+    } catch (error) {
+        console.log("Error fetching products:", error);
+    }
 }
