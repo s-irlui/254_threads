@@ -175,3 +175,23 @@ nav a:hover {
     display: inline-block;
     background: #0d0d0d;
 }
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    background: gold;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+}
+
+.product button {
+    display: block;
+    width: 100%;
+}

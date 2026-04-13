@@ -63,7 +63,30 @@ function addToCart(name, price) {
 
     alert(`${name} added to cart 🛒`);
 
-    console.log(cart);
+    renderCart();
+}
+
+function renderCart() {
+    const cartContainer = document.getElementById("cart-items");
+    const totalDisplay = document.getElementById("total");
+
+    cartContainer.innerHTML = "";
+
+    let total = 0;
+
+    cart.forEach(item => {
+        const div = document.createElement("div");
+
+        div.innerHTML = `
+            <p>${item.name} - KES ${item.price}</p>
+        `;
+
+        cartContainer.appendChild(div);
+
+        total += item.price;
+    });
+
+    totalDisplay.textContent = "Total: KES " + total;
 }
 
 const searchInput = document.getElementById("searchInput");
