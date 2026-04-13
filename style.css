@@ -101,3 +101,36 @@ nav a:hover {
     object-fit: cover;
     margin-bottom: 10px;
 }
+
+#gallery {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+/* hide scrollbar */
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-container img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    border: 2px solid #222;
+    transition: 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    border-color: gold;
+}
