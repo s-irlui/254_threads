@@ -168,3 +168,10 @@ nav a:hover {
     margin-bottom: 10px;
     color: #ccc;
 }
+.contact-box {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #222;
+    display: inline-block;
+    background: #0d0d0d;
+}
