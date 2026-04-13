@@ -17,3 +17,19 @@ const products = [
 ];
 
 const container = document.getElementById("product-container");
+
+function displayProducts() {
+    products.forEach(product => {
+
+        const card = document.createElement("div");
+        card.classList.add("product");
+
+        card.innerHTML = `
+            <img src="${product.image}" alt="${product.name}">
+            <h3>${product.name}</h3>
+            <p>KES ${product.price}</p>
+        `;
+
+        container.appendChild(card);
+    });
+}
