@@ -9,3 +9,65 @@ body {
     background: #0d0d0d;
     color: white;
 }
+header {
+    background: #000;
+    padding: 15px 30px;
+    border-bottom: 1px solid gold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: gold;
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: gold;
+}
+#home {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #000, #111);
+}
+
+#home h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#home p {
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+#home button {
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
