@@ -3,28 +3,28 @@ const products = [
     {
         name: "254 Noir Hoodie",
         price: 3500,
-        image: "images/hoodie.jpg",
+        image: "image6.jpg",
         category: "Street Luxe",
         id: 1
     },
     {
         name: "Mtaa Drift Tee",
         price: 1800,
-        image: "images/tshirt.jpg",
+        image: "image7.jpg",
         category: "Urban Drop",
         id: 2
     },
     {
         name: "Nairobi Shadow Jacket",
         price: 5000,
-        image: "images/jacket.jpg",
+        image: "image8.jpg",
         category: "Premium Street",
         id: 3
     },
     {
         name: "254 Essentials Cap",
         price: 1200,
-        image: "images/cap.jpg",
+        image: "image9.jpg",
         category: "Accessories",
         id: 4
     }
@@ -205,6 +205,17 @@ function deleteProduct(id) {
             displayProducts();
         }
     });
+}
+function checkout() {
+    if (cart.length === 0) {
+        alert("Your cart is empty 🛒");
+        return;
+    }
+
+    alert("Order placed successfully 🇰🇪🔥");
+
+    cart = [];
+    renderCart();
 }
 
 displayProducts();

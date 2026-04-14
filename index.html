@@ -23,10 +23,12 @@
 
     <!-- HERO SECTION -->
     <section id="home">
-        <h2>Redefining Kenyan Street Luxury</h2>
-        <p>Premium streetwear built for the bold.</p>
-        <button>Shop Now</button>
-    </section>
+    <div class="hero-content">
+        <h2>254 Threads</h2>
+        <p>Redefining Kenyan Street Luxury</p>
+        <button onclick="location.href='#products'">Shop Now</button>
+    </div>
+</section>
 
     <!-- PRODUCTS SECTION -->
      <input type="text" id="searchInput" placeholder="Search your drip...">
@@ -36,12 +38,17 @@
             <!-- Products from API will go here -->
         </div>
     </section>
+
+
     <section id="cart">
     <h2>Your Cart 🛒</h2>
     <div id="cart-items"></div>
     <h3 id="total">Total: KES 0</h3>
+
+    <button id="checkoutBtn" onclick="checkout()">Checkout</button>
 </section>
     <section id="gallery">
+
     <h2>Our Gallery</h2>
 
     <div class="gallery-container">
