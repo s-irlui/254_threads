@@ -292,3 +292,32 @@ button:hover {
     outline: none;
     transition: 0.3s;
 }
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.product {
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+}
+footer {
+    margin-top: 50px;
+    padding: 25px 20px;
+    text-align: center;
+
+    background: black;
+    
+}
+.footer-content h2 {
+    color: green;
+    margin-bottom: 8px;
+}
+
+.footer-content p {
+    color: #aaa;
+    margin: 4px 0;
+    font-size: 0.9rem;
+}
